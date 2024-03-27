@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="/images/oficina.png">
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <title>Info Oficina</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+          <img src="/images/eu.jpg" alt="Minha Foto de Perfil">
+          <div>
+            <a href="http://127.0.0.1:5500/html/index.html">
+              <button class="button-64"><span>home</span></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="conteudo">
+          <h1>Sistema de oficina</h1>
+          <div class="conteudo-imagem">
+              <img src="/images/login oficina.png" alt="Imagem 1">
+              <div class="texto">
+                <h2>Explicação</h2>
+                <p>O site que criei tem o intuito de funcionar como um sistema de oficina.</p>
+                <p>É necessário criar um login para acessá-lo.</p>
+                <p>Decidi criá-lo na web pela flexibilidade que o desenvolvimento web oferece, permitindo que qualquer pessoa acesse de onde estiver.</p>
+                <p>O site contém botões para diversos tipos de cadastros ou orçamentos.</p>
+                <h2>Cadastro de clientes</h2>
+                <p>Fornece as seguintes informações:</p>
+                <p>Nome do cliente e número de telefone.</p>
+                <h2>Cadastro de funcionários</h2>
+                <p>Fornece as seguintes informações:</p>
+                <p>Nome do funcionário, número de telefone, email e endereço.</p>
+                <h2>Cadastro de fornecedores</h2>
+                <p>Fornece as seguintes informações:</p>
+                <p>Endereço, número de telefone, nome do fornecedor e produto fornecido.</p>
+                <h2>Cadastro de peças</h2>
+                <p>Permite inserir o nome da peça, a referência e o valor.</p>
+                <h2>Cadastro de Carros</h2>
+                <p>Esse modal permite cadastrar os veículos dos clientes.</p>
+                <p>Você seleciona o cliente cadastrado e, em seguida, preenche os dados do veículo.</p>
+                <p>Por exemplo: Placa, Ano, Marca, Modelo, KM e Cor.</p>
+              </div>
+          </div>
+
+          <div class="conteudo-imagem2">
+            <img src="/images/fazer orçamento oficina.png" class="orçamento" alt="">
+            <div class="texto2">
+              <h2>Criando orçamentos</h2>
+              <p>Falando agora sobre orçamentos, foi desenvolvida essa página</p>
+              <p>que permite que o usuário preencha os campos fornecidos</p>
+              <p>Para a criação de seu orçamento.</p>
+              <p>Os primeiros campos pedidos, são os campos de cliente,</p>
+              <p>Como nome, e telefone.</p>
+              <p>Assim que preenchido com o nome (tendo a opção de selecionar o cliente),</p>
+              <p>O telefone já é puxado automaticamente.</p>
+              <p>Em seguida, temos a opção de selecionar o carro, após selecionarmos,</p>
+              <p>Os outros dados já são puxados automaticamente, como modelo, placa</p>
+              <p>Ano, KM, cor e marca, facilitando então, na criação de orçamentos.</p>
+              <p>Em seguida, nós temos os campos de peça, referência e valor da peça.</p>
+              <p>Sendo capaz de selecionar mais de uma peça, pois as vezes o serviço é grande</p>
+              <p>Após preencher os campos de peça, nós temos o campo de valor da mão de obra.</p>
+              <p>Preenchendo então o valor da mão de obra,</p>
+              <p>O sistema soma os valores das peças, junto com o valor da mão de obra, finalizando então</p>
+              <p>a aba de criação de orçamento, e dando sequência a próxima etapa.</p>
+            </div>
+          </div>
+
+          <div class="conteudo-imagem3">
+            <img src="/images/orçamento oficina.png" class="orçamento pdf" alt="">
+            <div class="texto3">
+              <h2>Orçamento PDF</h2>
+              <p>Após a criação do orçamento,</p>
+              <p>Temos um botão escrito "Criar orçamento",</p>
+              <p>Ao clicarmos em "Criar orçamento", o sistema pega os dados</p>
+              <p>dos campos de criação de orçamento, e gera um arquivo PDF.</p>
+              <p>Eu pensei em criar o arquivo PDF, para facilitar a impressão</p>
+              <p>do orçamento, e também por ser bem flexível quanto ao</p>
+              <p>encaminhamento, facilitando enviar o mesmo seja por WhatsApp,</p>
+              <p>Email, Telegram e etc, pois o arquivo será baixado em</p>
+              <p>sua máquina, selecionando a pasta desejada.</p>
+              <p>Uma dica que eu dou aos usuários, é que criem uma pasta de orçamentos</p>
+              <p>e dentro, crie uma pasta com o ano, e dentro dessa pasta do ano,</p>
+              <p>crie uma pasta com os meses, para salvar os arquivos separadamente,</p>
+              <p>facilitando a consulta de orçamentos quando necessário.</p>
+              <p>Lembrando que o arquivo PDF vem com a Logo da empresa, os dados</p>
+              <p>do cliente e de seu veículo.</p>
+              <p>E no fim da página, uma barra para o cliente assinar, para saber</p>
+              <p>se o orçamento foi aprovado, com data e hora.</p>
+ 
+            </div>
+          </div>
+
+          <div class="conteudo-imagem4">
+            <img src="/images/oficina.png" class="orçamento pdf" alt="">
+            <div class="texto4">
+              <h2>Ferramentas e Dificuldades</h2>
+              <p>Para armazenar os dados do nosso sistema, tanto de</p>
+              <p>Login, quanto do próprio sistema de oficina, eu escolhi</p>
+              <p>usar o MySQL, no Workbench. Por ter mais intimidade com o</p>
+              <p>programa e mais conhecimento da ferramenta que é o MySQL,</p>
+              <p>tanto que não obtive nenhuma ajuda ou auxílio para criar o BD.</p>
+              <p>Para criar o Backend do sistema, eu optei por Node.js e JavaScript, mesmo</p>
+              <p>não tendo muita intimidade com a ferramenta, acredito que seja a</p>
+              <p>melhor para esse tipo de serviço, então pedi ajuda ao ChatGPT,</p>
+              <p>para criar o servidor do meu sistema e "linkar" com meu Banco de Dados.</p>
+              <p>Tive muita dificuldade, pois não tenho conhecimento da linguagem, mas com</p>
+              <p>muita pesquisa e força de vontade, fiz acontecer.</p>
+              <p>Para criar a lógica do meu relógio na tela inicial, usei o JavaScript.</p>
+              <p>Já para a interface visual (frontend), eu usei o HTML e o CSS</p>
+              <p>por ter mais familiaridade com as ferramentas, como já comentado, </p>
+              <p>eu queria criar o sistema como um sistema WEB, por acreditar que a flexibilidade</p>
+              <p>seja maior, sendo possível acessar de qualquer lugar e dispositivo, sem precisar</p>
+              <p>baixar nada.</p>
+              <p>Minha maior dificuldade foi com o Backend, como já mencionei, </p>
+              <p>mas não tinha familiaridade nenhuma</p>
+              <p>com o Node.js nem o JavaScript. Mas isso não me impediu de criar.</p>
+              <p>Tive essa ideia de criar o sistema, por já ter trabalhado em uma oficina mecânica.</p>
+              <p>Juntei a vontade de criar um sistema com a minha realidade cotidiana, e então criei esse projeto.</p>
+              <p>O programa que usávamos na oficina era um app que era transferido via pen drive, e um dia esse pen drive</p>
+              <p>acabou quebrando, e perdemos o sistema. Meu chefe teve que entrar em contato com o dono do app para adquirir</p>
+              <p>outro sistema, e acabamos perdendo alguns dados salvos, por isso optei por baixar os arquivos em PDF.</p>
+  
+            </div>
+          </div>
+
+      <div>
+        <script src="https://kit.fontawesome.com/a3616fd7bb.js" crossorigin="anonymous"></script>
+</body>
+</html>

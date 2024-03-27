@@ -1,0 +1,340 @@
+.container {
+  display: block; /* Alterado para display block */
+  text-align: center; /* Centraliza o conteúdo */
+}
+.profile {
+  width: 60%; /* Largura da div */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url('/images/fundo.jpg'); /* Caminho da imagem de fundo */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir a div */
+  background-position: center; /* Centraliza a imagem */
+  color: blue; /* Define a cor do texto como azul */
+}
+.profile img {
+  max-width: 120px;
+  height: 120px;
+  width: 120px;
+  border-radius: 60%;
+}
+.profile div {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+}
+.profile a {
+  margin: 0 5px; /* Espaçamento entre os ícones */
+  color: blue; /* Define a cor dos links como azul */
+}
+.profile i {
+  font-size: 30px;
+  color: rgb(255, 165, 0); /* Cor inicial dos ícones (laranja) */
+  transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor */
+}
+
+.profile i:hover {
+  color: rgb(255, 69, 0); /* Altera a cor dos ícones para vermelho ao passar o mouse */
+}
+
+img {
+  max-width: 80%; /* Reduzindo o tamanho máximo das imagens para 80% da largura da página */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Ajuste para exibir a imagem como bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  border-radius: 10%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra */
+}
+
+/* Adiciona o efeito de elevação ao passar o mouse */
+img:hover {
+  transform: translateY(-3px); /* Move a imagem para cima ao passar o mouse */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+
+body {
+  background-color: black; /* Cor de fundo */
+  color: white; /* Cor do texto padrão em branco */
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0; /* Remove margens padrão do body */
+}
+
+p {
+  font-family: 'Arial', sans-serif; /* Define a fonte do texto */
+  font-size: 16px; /* Define o tamanho da fonte */
+  line-height: 1.5; /* Define a altura da linha */
+  color: #b4aeae; /* Define a cor do texto */
+  margin-bottom: 10px; /* Define a margem inferior */
+}
+
+h2{
+  font-size: 20px; /* Define o tamanho da fonte */
+  margin-bottom: 15px; /* Define a margem inferior */
+  font-family: 'Arial', sans-serif; /* Define a fonte */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #444; /* Define a cor do texto */
+  color: aqua;
+  padding: 15px;
+}
+
+h1{
+  font-size: 24px; /* Define o tamanho da fonte */
+  margin-bottom: 20px; /* Define a margem inferior */
+  font-family: 'Arial', sans-serif; /* Define a fonte */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #444; /* Define a cor do texto */ font-family: 'Arial', sans-serif; /* Define a fonte */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #444; /* Define a cor do texto */
+  padding: 10px;
+  color: blueviolet;
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 16px; /* Diminui o tamanho da fonte */
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 120px; /* Reduz o tamanho mínimo do botão */
+  padding: 6px; /* Aumenta o preenchimento do botão */
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 12px 20px; /* Ajusta o preenchimento interno do botão */
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+.button-64 span:hover {
+  background: none; /* Remove o fundo quando passar o mouse sobre o span */
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 20px; /* Ajusta o tamanho da fonte para telas maiores */
+    min-width: 140px; /* Ajusta o tamanho mínimo para telas maiores */
+  }
+}
+
+#botaoClose,#close2,#close3,#close4{
+  float: left;
+  color: black;
+  background-color: transparent;
+  border: none; /* Opcional: remover a borda se não for necessário */
+  cursor: pointer;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 400px; /* Defina a largura máxima conforme necessário */
+  width: calc(100% - 40px); /* Subtraindo o padding de 20px de cada lado */
+}
+  
+  dialog p {
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      display: block; /* Alterado para display block */
+      text-align: center; /* Centraliza o conteúdo */
+    }
+    .profile {
+      width: 60%; /* Largura da div */
+      margin: 0 auto; /* Centraliza horizontalmente */
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-image: url('/images/fundo.jpg'); /* Caminho da imagem de fundo */
+      background-size: cover; /* Ajusta o tamanho da imagem para cobrir a div */
+      background-position: center; /* Centraliza a imagem */
+      color: blue; /* Define a cor do texto como azul */
+    }
+    .profile img {
+      max-width: 120px;
+      height: 120px;
+      width: 120px;
+      border-radius: 60%;
+    }
+    .profile div {
+      display: flex;
+      justify-content: center; /* Centraliza os ícones horizontalmente */
+    }
+    .profile a {
+      margin: 0 5px; /* Espaçamento entre os ícones */
+      color: blue; /* Define a cor dos links como azul */
+    }
+    .profile i {
+      font-size: 30px;
+      color: rgb(255, 165, 0); /* Cor inicial dos ícones (laranja) */
+      transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor */
+    }
+    
+    .profile i:hover {
+      color: rgb(255, 69, 0); /* Altera a cor dos ícones para vermelho ao passar o mouse */
+    }
+    
+    img {
+      max-width: 80%; /* Reduzindo o tamanho máximo das imagens para 80% da largura da página */
+      height: auto; /* Mantém a proporção da imagem */
+      display: block; /* Ajuste para exibir a imagem como bloco */
+      margin: 0 auto; /* Centraliza a imagem horizontalmente */
+      border-radius: 10%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave */
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra */
+    }
+    
+    /* Adiciona o efeito de elevação ao passar o mouse */
+    img:hover {
+      transform: translateY(-3px); /* Move a imagem para cima ao passar o mouse */
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+    }
+    
+    
+    
+    body {
+      background-color: black; /* Cor de fundo */
+      color: white; /* Cor do texto padrão em branco */
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0; /* Remove margens padrão do body */
+    }
+    
+    p {
+      font-family: 'Arial', sans-serif; /* Define a fonte do texto */
+      font-size: 16px; /* Define o tamanho da fonte */
+      line-height: 1.5; /* Define a altura da linha */
+      color: #b4aeae; /* Define a cor do texto */
+      margin-bottom: 10px; /* Define a margem inferior */
+    }
+    
+    h2{
+      font-size: 20px; /* Define o tamanho da fonte */
+      margin-bottom: 15px; /* Define a margem inferior */
+      font-family: 'Arial', sans-serif; /* Define a fonte */
+      font-weight: bold; /* Define a espessura da fonte como negrito */
+      color: #444; /* Define a cor do texto */
+      color: aqua;
+      padding: 15px;
+    }
+    
+    h1{
+      font-size: 24px; /* Define o tamanho da fonte */
+      margin-bottom: 20px; /* Define a margem inferior */
+      font-family: 'Arial', sans-serif; /* Define a fonte */
+      font-weight: bold; /* Define a espessura da fonte como negrito */
+      color: #444; /* Define a cor do texto */ font-family: 'Arial', sans-serif; /* Define a fonte */
+      font-weight: bold; /* Define a espessura da fonte como negrito */
+      color: #444; /* Define a cor do texto */
+      padding: 10px;
+      color: blueviolet;
+    }
+    
+    .button-64 {
+      align-items: center;
+      background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 16px; /* Diminui o tamanho da fonte */
+      justify-content: center;
+      line-height: 1em;
+      max-width: 100%;
+      min-width: 120px; /* Reduz o tamanho mínimo do botão */
+      padding: 6px; /* Aumenta o preenchimento do botão */
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+      margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    
+    .button-64:active,
+    .button-64:hover {
+      outline: 0;
+    }
+    
+    .button-64 span {
+      background-color: rgb(5, 6, 45);
+      padding: 12px 20px; /* Ajusta o preenchimento interno do botão */
+      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+      transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
+    }
+    
+    .button-64 span:hover {
+      background: none; /* Remove o fundo quando passar o mouse sobre o span */
+    }
+    
+    @media (min-width: 768px) {
+      .button-64 {
+        font-size: 20px; /* Ajusta o tamanho da fonte para telas maiores */
+        min-width: 140px; /* Ajusta o tamanho mínimo para telas maiores */
+      }
+    }
+    
+    #botaoClose,#close2,#close3,#close4{
+      float: left;
+      color: black;
+      background-color: transparent;
+      border: none; /* Opcional: remover a borda se não for necessário */
+      cursor: pointer;
+    }
+    
+    dialog {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      max-width: 400px; /* Defina a largura máxima conforme necessário */
+      width: calc(100% - 40px); /* Subtraindo o padding de 20px de cada lado */
+    }
+  }
+  

@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden; /* Esconde a rolagem horizontal */
+      }
+    .conteudo-imagem,
+    .conteudo-imagem2,
+    .conteudo-imagem3,
+    .conteudo-imagem4 {
+      text-align: center; /* Centraliza o conteúdo na versão móvel */
+    }
+  
+    .conteudo-imagem img,
+    .conteudo-imagem2 img,
+    .conteudo-imagem3 img,
+    .conteudo-imagem4 img {
+      margin-bottom: 0%;
+      width: 380px;
+      float: none; /* Remove a flutuação da imagem na versão móvel */
+      margin: 0 auto; /* Centraliza a imagem na versão móvel */
+    }
+  
+    .texto,
+    .texto2,
+    .texto3,
+    .texto4 {
+      text-align: center; /* Centraliza o texto na versão móvel */
+      margin: 10px; /* Adiciona um pequeno espaçamento ao redor do texto */
+    }
+  }
+  
