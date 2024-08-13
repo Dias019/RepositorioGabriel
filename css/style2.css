@@ -45,7 +45,7 @@
     margin: 0; /* Remove margens padrão do body */
   }
   
-  p {
+  p,li,ul {
     font-family: 'Arial', sans-serif; /* Define a fonte do texto */
     font-size: 16px; /* Define o tamanho da fonte */
     line-height: 1.5; /* Define a altura da linha */
