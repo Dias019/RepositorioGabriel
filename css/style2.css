@@ -1,214 +1,186 @@
+
+
+/* Estilos gerais para o body */
+body {
+  background-image: linear-gradient(to right top, #f7f7f7, #e5e6ee, #d0d6e6, #b8c8de, #9dbad5);
+  color: #333; /* Cor padrão do texto */
+  font-family: 'Arial', sans-serif; /* Fonte padrão */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+}
+
+/* Estilos para o container principal */
 .container {
-    display: block; /* Alterado para display block */
-    text-align: center; /* Centraliza o conteúdo */
-  }
-  .profile {
-    width: 60%; /* Largura da div */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-image: url('/images/fundo.jpg'); /* Caminho da imagem de fundo */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir a div */
-    background-position: center; /* Centraliza a imagem */
-    color: blue; /* Define a cor do texto como azul */
-  }
-  .profile img {
-    max-width: 120px;
-    height: 120px;
-    width: 120px;
-    border-radius: 60%;
-  }
-  .profile div {
-    display: flex;
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-  }
-  .profile a {
-    margin: 0 5px; /* Espaçamento entre os ícones */
-    color: blue; /* Define a cor dos links como azul */
-  }
-  .profile i {
-    font-size: 30px;
-    color: rgb(255, 165, 0); /* Cor inicial dos ícones (laranja) */
-    transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor */
-  }
-  
-  .profile i:hover {
-    color: rgb(255, 69, 0); /* Altera a cor dos ícones para vermelho ao passar o mouse */
-  }
-
-  body {
-    background-color: black; /* Cor de fundo */
-    color: white; /* Cor do texto padrão em branco */
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0; /* Remove margens padrão do body */
-  }
-  
-  p,li,ul {
-    font-family: 'Arial', sans-serif; /* Define a fonte do texto */
-    font-size: 16px; /* Define o tamanho da fonte */
-    line-height: 1.5; /* Define a altura da linha */
-    color: #b4aeae; /* Define a cor do texto */
-    margin-bottom: 10px; /* Define a margem inferior */
-  }
-  
-  h2{
-    font-size: 20px; /* Define o tamanho da fonte */
-    margin-bottom: 15px; /* Define a margem inferior */
-    font-family: 'Arial', sans-serif; /* Define a fonte */
-    font-weight: bold; /* Define a espessura da fonte como negrito */
-    color: #444; /* Define a cor do texto */
-    color: aqua;
-    padding: 15px;
-  }
-  
-  h1{
-    font-size: 24px; /* Define o tamanho da fonte */
-    margin-bottom: 20px; /* Define a margem inferior */
-    font-family: 'Arial', sans-serif; /* Define a fonte */
-    font-weight: bold; /* Define a espessura da fonte como negrito */
-    color: #444; /* Define a cor do texto */ font-family: 'Arial', sans-serif; /* Define a fonte */
-    font-weight: bold; /* Define a espessura da fonte como negrito */
-    color: #444; /* Define a cor do texto */
-    padding: 10px;
-    color: blueviolet;
-  }
-
-  
-  .button-64,
-.button-64 a {
-  text-decoration: none !important; /* Remove sublinhado */
+  margin-top: 60px; /* Ajuste conforme necessário para o tamanho do menu */
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px; /* Limita a largura máxima do container */
+  padding: 20px; /* Adiciona padding ao redor do conteúdo */
 }
 
-.button-64 {
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
+/* Perfil */
+.profile {
+  width: 80%; /* Ajusta a largura para melhor centralização */
+  margin: 20px auto; /* Adiciona margem superior e inferior, e centraliza horizontalmente */
+  padding: 20px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  color: blue;
+  background-image: url('/images/pattern.png'); /* Imagem de padrão */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('/images/decorative-shape.png'); /* Imagem decorativa */
+  background-size: cover;
+}
+
+.profile blockquote {
+  font-style: italic;
+  color: #555;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.profile img {
+  max-width: 120px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem */
+}
+
+.profile div {
   display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 16px; /* Diminui o tamanho da fonte */
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 120px; /* Reduz o tamanho mínimo do botão */
-  padding: 6px; /* Aumenta o preenchimento do botão */
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+}
+
+.profile a {
+  margin: 0 10px; /* Espaçamento maior entre os ícones */
+}
+
+.profile i {
+  font-size: 30px;
+  color: rgb(255, 165, 0);
+  transition: color 0.3s ease;
+}
+
+.profile i:hover {
+  color: rgb(255, 69, 0);
+}
+
+.profile .button-64 {
+  display: inline-block;
+  background: linear-gradient(145deg, #9DBAD5, #A3C9A8);
+  border-radius: 12px;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  font-family: 'Phantomsans', sans-serif;
+  font-size: 16px;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-  margin: 0 auto; /* Centraliza horizontalmente */
+  margin: 10px auto; /* Adiciona espaçamento entre os botões e centraliza horizontalmente */
+  white-space: nowrap;
 }
 
-.button-64:active,
-.button-64:hover {
-  outline: 0;
+.profile .button-64:hover {
+  background: linear-gradient(145deg, #A3C9A8, #9DBAD5);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3), inset 1px 1px 4px rgba(255, 255, 255, 0.5);
+  transform: translateY(-4px);
+  border-color: #FFFFFF;
 }
 
-.button-64 span {
-  background-color: rgb(5, 6, 45);
-  padding: 12px 20px; /* Ajusta o preenchimento interno do botão */
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
-}
-
-.button-64 span:hover {
-  background: none; /* Remove o fundo quando passar o mouse sobre o span */
-}
-
-@media (min-width: 768px) {
-  .button-64 {
-    font-size: 20px; /* Ajusta o tamanho da fonte para telas maiores */
-    min-width: 140px; /* Ajusta o tamanho mínimo para telas maiores */
-  }
-}
-
-/* style para o pc */
+/* Estilos para a seção de conteúdo */
 .conteudo {
-  display: block; /* Alterado para display block */
-  text-align: center; /* Centraliza o conteúdo */
-  overflow: auto; /* Limpar as flutuações */
+  width: 80%; /* Ajusta a largura para melhor centralização */
+  margin: 20px auto; /* Adiciona margem superior e inferior, e centraliza horizontalmente */
+  padding: 20px;
+  text-align: center; /* Centraliza o texto */
 }
 
-.conteudo h1 {
-  text-align: center; /* Centralizar o texto */
-}
-
-.conteudo-imagem, .conteudo-imagem3 {
-  display: block; /* Alterado para display block */
-  text-align: right; /* Alinhar o conteúdo à esquerda */
-  margin-top: 20px; /* Espaçamento entre o título e a imagem */
-}
-
-.conteudo-imagem img{
-  padding-top: 360px;
-  width: 700px; /* Largura da imagem */
-  height: auto; /* Altura automática para manter a proporção */
-  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+/* Estilos para as imagens de conteúdo */
+.conteudo-imagem img, .conteudo-imagem2 img, .conteudo-imagem3 img, .conteudo-imagem4 img{
+  max-width: 100%;
+  height: auto;
   border-radius: 10%;
-  float: right; /* Faz a imagem flutuar à esquerda */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px; /* Espaçamento inferior das imagens */
 }
 
-.texto, .texto3 {
-  display: block; /* Alterado para display block */
-  text-align: left; /* Alinhar o texto à esquerda */
-  margin-left: 100px; /* Espaçamento para deixar o texto ao lado da imagem */
+.conteudo-imagem img:hover, .conteudo-imagem2 img:hover, .conteudo-imagem3 img:hover, .conteudo-imagem4 img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.conteudo-imagem2 img {
-  padding-top: 130px;
-  width: 700px; /* Largura da imagem */
-  height: auto; /* Altura automática para manter a proporção */
-  margin-left: 20px; /* Espaçamento entre a imagem e o texto */
-  border-radius: 10%;
-  float: left; /* Faz a imagem flutuar à esquerda */
+.texto,
+.texto2,
+.texto3,
+.texto4 {
+    max-width: 800px; /* Limita a largura do texto para uma melhor leitura */
+    margin: 0 auto; /* Centraliza o texto */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
-.conteudo-imagem2, .conteudo-imagem4 {
-  display: block; /* Alterado para display block */
-  text-align: left; /* Alinhar o conteúdo à esquerda */
-  margin-top: 20px; /* Espaçamento entre o título e a imagem */
+/* Estilos para os textos dentro das seções de conteúdo */
+.texto, .texto2, .texto3, .texto4 {
+  font-family: 'Arial', sans-serif; /* Define a fonte do texto */
+  font-size: 16px; /* Define o tamanho da fonte */
+  line-height: 1.5; /* Define a altura da linha */
+  color: #1b0ed2; /* Azul Escuro */
+  margin-bottom: 15px; /* Espaçamento maior entre os parágrafos */
 }
 
-.texto2, .texto4 {
-  display: block; /* Alterado para display block */
-  text-align: right; /* Alinhar o texto à esquerda */
-  margin-right: 100px; /* Espaçamento para deixar o texto ao lado da imagem */
+.texto h2, .texto2 h2, .texto3 h2, .texto4 h2 {
+  font-family: 'Arial', sans-serif; /* Define a fonte do título */
+  font-size: 20px; /* Define o tamanho do título */
+  color: #0056A0; /* Azul Royal */
+  margin-bottom: 15px; /* Espaçamento inferior dos títulos */
+  padding: 10px 0;
 }
 
-.conteudo-imagem3 img{
-  padding-top: 160px;
-  width: 700px; /* Largura da imagem */
-  height: auto; /* Altura automática para manter a proporção */
-  margin-right: 30px; /* Espaçamento entre a imagem e o texto */
-  border-radius: 10%;
-  float: right; /* Faz a imagem flutuar à esquerda */
+.texto strong {
+  font-weight: bold; /* Define o texto em negrito */
 }
 
-.conteudo-imagem4 img{
-  padding-top: 300px;
-  width: 700px; /* Largura da imagem */
-  height: auto; /* Altura automática para manter a proporção */
-  margin-left: 20px; /* Espaçamento entre a imagem e o texto */
-  border-radius: 10%;
-  float: left; /* Faz a imagem flutuar à esquerda */
+
+.conteudo-imagem,
+.conteudo-imagem2,
+.conteudo-imagem3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as imagens */
+    margin-bottom: 30px; /* Espaçamento entre seções */
 }
 
-h2{
-  margin-top: 30px;
+.conteudo-imagem img,
+.conteudo-imagem2 img,
+.conteudo-imagem3 img {
+    max-width: 100%; /* Adapta a largura da imagem ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-.conteudo-imagem3 img:hover,
-.conteudo-imagem4 img:hover,
-.conteudo-imagem2 img:hover,
-.conteudo-imagem img:hover{
-  transform: scale(1.1); /* Aumenta ligeiramente o tamanho da imagem */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+/* Ajustes para links e botões */
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #1b0ed2; /* Cor padrão dos links */
+}
+
+a:hover {
+  color: #0056A0; /* Cor dos links ao passar o mouse */
 }

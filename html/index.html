@@ -5,19 +5,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veja o portfólio de Gabriel Dias, desenvolvedor web e programador. Descubra projetos em desenvolvimento web, Python, PHP e muito mais.">
     <link rel="website icon"  type="png" href="/images/dev.png">
     <title>Repositório</title>
     <link rel="stylesheet" href="/css/style.css">
    
 </head>
 <body style="display: block;">
+  <nav class="navbar">
+    <ul>
+        <li><a href="#profile">Perfil</a></li>
+        <li><a href="#objectives">Objetivos</a></li>
+        <a href="#projects">Veja meus projetos</a>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
     <div class="container">
-        <div class="profile">
+      <div id="profile" class="profile">
           <img src="/images/eu.jpg" alt="Minha Foto de Perfil">
+          <blockquote>
+            "A única maneira de fazer um ótimo trabalho é amar o que você faz." – Steve Jobs
+          </blockquote>
           <div>
-            <a href="https://api.whatsapp.com/send?phone=5519974257667">
-              <i class="fab fa-whatsapp" style="color: #7518cd;"></i>
-            </a>
             <a href="https://github.com/Dias019">
               <i class="fab fa-github" style="color: #7518cd;"></i>
             </a>
@@ -27,9 +36,9 @@
           </div>
         </div>
         
-        <div class="objectives">
-          <h2>Objetivos e Quem Eu Sou</h2>
-          <p>Eu me chamo Gabriel Leonardo Dias, tenho 21 anos e sou de Campinas-SP.</p>
+        <div id="objectives" class="objectives">
+          <h1>Portfólio de Desenvolvimento Web e Programação</h1>
+          <p>Olá, eu sou Gabriel Dias, um desenvolvedor web especializado em <strong>JavaScript</strong> e <strong>PHP</strong>. Veja meus projetos e habilidades.</p>
           <p>Atualmente, curso Análise e Desenvolvimento de Sistemas na Unisal, no campus São José, em Campinas-SP.</p>
           <p>Entrei na área da programação recentemente e cada vez busco mais conhecimento.</p>
           <p>Já concluí alguns cursos complementares, tais como:</p>
@@ -87,7 +96,7 @@
           <p>Meu maior objetivo é conseguir um trabalho na área de frontend, onde eu possa agregar com a empresa, e obter mais conhecimentos</p>
         </div>
         
-        <div class="projects">
+        <div id="projects" class="projects">
           <h1>Meus Projetos</h1>
             
                 <h2>Sistema de oficina WEB</h2>
@@ -145,15 +154,19 @@
                  
         </div>
         
-        <div class="email">
-          <h1>Email</h1>
+        <div id="contato" class="contato">
+          <h1>Entre em contato comigo, via Email ou Whatsapp</h1>
           <p>Se desejar entrar em contato, você pode me enviar um email para:</p>
-          <p>Gabriel.leoodias@gmail.com</p>
-          <a href="mailto:gabriel.leoodias@gmail.com?subject=Contato+via+reposit%C3%B3rio">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
+          <p><a href="mailto:gabriel.leoodias@gmail.com?subject=Contato+via+reposit%C3%B3rio">Gabriel.leoodias@gmail.com</a></p>
+          <div class="contact-links">
+            <a href="mailto:gabriel.leoodias@gmail.com?subject=Contato+via+reposit%C3%B3rio" class="contact-link">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5519974257667" class="contact-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
         </div>
-      </div>
 
       <script src="/js/modal.js"></script>
 <script src="https://kit.fontawesome.com/a3616fd7bb.js" crossorigin="anonymous"></script>

@@ -1,30 +1,63 @@
+/* Estilos gerais para dispositivos móveis */
 @media (max-width: 767px) {
-    body {
-        overflow-x: hidden; /* Esconde a rolagem horizontal */
-      }
-    .conteudo-imagem,
-    .conteudo-imagem2,
-    .conteudo-imagem3,
-    .conteudo-imagem4 {
-      text-align: center; /* Centraliza o conteúdo na versão móvel */
-    }
-  
-    .conteudo-imagem img,
-    .conteudo-imagem2 img,
-    .conteudo-imagem3 img,
-    .conteudo-imagem4 img {
-      margin-bottom: 0%;
-      width: 380px;
-      float: none; /* Remove a flutuação da imagem na versão móvel */
-      margin: 0 auto; /* Centraliza a imagem na versão móvel */
-    }
-  
-    .texto,
-    .texto2,
-    .texto3,
-    .texto4 {
-      text-align: center; /* Centraliza o texto na versão móvel */
-      margin: 10px; /* Adiciona um pequeno espaçamento ao redor do texto */
-    }
+  .navbar {
+    padding: 10px; /* Ajusta o padding do menu */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    text-align: center; /* Centraliza o texto no menu */
   }
-  
+
+  .navbar ul {
+    flex-direction: column; /* Alinha os itens da lista verticalmente */
+  }
+
+  .navbar li {
+    margin: 10px 0; /* Ajusta o espaçamento entre os itens do menu */
+  }
+
+  .container {
+    margin-top: 60px; /* Mantém o espaço para o menu fixo */
+    padding: 10px; /* Reduz o padding */
+    width: 90%; /* Ajusta a largura para dispositivos móveis */
+    max-width: none; /* Remove o limite de largura máxima */
+  }
+
+  .profile {
+    width: 90%; /* Ajusta a largura para dispositivos móveis */
+    padding: 10px; /* Reduz o padding */
+  }
+
+  .profile::before {
+    display: none; /* Remove a imagem decorativa em telas pequenas */
+  }
+
+  .profile img {
+    max-width: 100px; /* Ajusta o tamanho da imagem do perfil */
+    height: 100px; /* Ajusta a altura da imagem do perfil */
+  }
+
+  .objectives, .projects, .contato {
+    width: 90%; /* Ajusta a largura para dispositivos móveis */
+    padding: 10px; /* Reduz o padding */
+  }
+
+  .objectives p, .projects h1, .projects h2, .contato p {
+    font-size: 14px; /* Reduz o tamanho da fonte para dispositivos móveis */
+  }
+
+  .button-64 {
+    font-size: 14px; /* Ajusta o tamanho da fonte dos botões */
+    padding: 8px 16px; /* Reduz o padding dos botões */
+  }
+
+  .projects img {
+    max-width: 100%; /* Ajusta o tamanho máximo da imagem */
+  }
+
+  .contact-link {
+    font-size: 20px; /* Ajusta o tamanho dos ícones de contato */
+  }
+
+  dialog {
+    width: calc(100% - 20px); /* Ajusta a largura do diálogo */
+  }
+}
