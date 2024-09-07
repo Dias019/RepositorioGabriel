@@ -59,5 +59,6 @@
 
   dialog {
     width: calc(100% - 20px); /* Ajusta a largura do diálogo */
+    margin-left: 15px auto;
   }
 }
